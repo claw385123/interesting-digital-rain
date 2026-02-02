@@ -1,15 +1,27 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Body -->
-    <path d="M 50,30 C 40,20 30,30 30,40 L 30,60 C 30,70 40,80 50,80 C 60,80 70,70 70,60 L 70,40 C 70,30 60,20 50,30 Z" fill="none" stroke-width="2"/>
-    <!-- Tail -->
-    <path d="M 50,80 C 45,85 55,85 50,90 C 45,95 55,95 50,100" fill="none" stroke-width="2"/>
-    <!-- Claws -->
-    <path d="M 30,45 C 20,40 15,50 20,55" fill="none" stroke-width="2"/>
-    <path d="M 70,45 C 80,40 85,50 80,55" fill="none" stroke-width="2"/>
-    <!-- Eyes -->
-    <circle cx="45" cy="35" r="2"/>
-    <circle cx="55" cy="35" r="2"/>
-    <!-- Antennae -->
-    <path d="M 45,30 Q 30,10 20,15" fill="none" stroke-width="1.5"/>
-    <path d="M 55,30 Q 70,10 80,15" fill="none" stroke-width="1.5"/>
+    <!-- Main Body -->
+    <path d="M50,20 C30,0 10,20 10,40 C10,60 30,80 50,80 C70,80 90,60 90,40 C90,20 70,0 50,20 Z" fill="none" stroke="#0F0" stroke-width="3"/>
+    
+    <!-- Tail Segments -->
+    <path d="M50,80 L50,85" stroke="#0F0" stroke-width="3"/>
+    <path d="M45,85 L55,85" stroke="#0F0" stroke-width="3"/>
+    <path d="M40,90 L60,90" stroke="#0F0" stroke-width="3"/>
+    <path d="M35,95 L65,95" stroke="#0F0" stroke-width="3"/>
+    <path d="M30,100 L70,100" stroke="#0F0" stroke-width="3"/>
+
+    <!-- Claws (more stylized) -->
+    <path d="M10,40 Q0,30 5,20 T15,10" fill="none" stroke="#0F0" stroke-width="3"/>
+    <path d="M90,40 Q100,30 95,20 T85,10" fill="none" stroke="#0F0" stroke-width="3"/>
+    
+    <!-- Pincers -->
+    <path d="M15,10 C20,0 25,5 25,15" fill="none" stroke="#0F0" stroke-width="2"/>
+    <path d="M85,10 C80,0 75,5 75,15" fill="none" stroke="#0F0" stroke-width="2"/>
+
+    <!-- Eyes (larger, more prominent) -->
+    <circle cx="40" cy="30" r="4" fill="#0F0"/>
+    <circle cx="60" cy="30" r="4" fill="#0F0"/>
+
+    <!-- Antennae (thicker, more curved) -->
+    <path d="M40,30 Q30,5 20,0" fill="none" stroke="#0F0" stroke-width="2"/>
+    <path d="M60,30 Q70,5 80,0" fill="none" stroke="#0F0" stroke-width="2"/>
 </svg>
