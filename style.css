@@ -3,8 +3,39 @@ body, html {
     padding: 0;
     overflow: hidden;
     background-color: #000;
+    position: relative; /* Needed for child absolute positioning */
 }
 
 canvas {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Canvas on top of the watermark */
+}
+
+.watermark-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw; /* Adjust size as needed */
+    height: 30vw;
+    z-index: 0; /* Watermark in the background */
+    opacity: 0.1; /* Make it a subtle watermark */
+}
+
+#lobster-watermark {
+    width: 100%;
+    height: 100%;
+}
+
+#lobster-watermark path,
+#lobster-watermark circle {
+    stroke: #0F0; /* Ensure stroke color matches the digital rain */
+    fill: #0F0; /* Fill for the eyes */
+}
+
+#lobster-watermark path {
+    fill: none; /* Paths should only be outlines */
 }
